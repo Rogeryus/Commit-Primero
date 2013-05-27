@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Clave:</b>
+  <%= @alumno.clave %>
+</p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @alumno.nombre %>
+</p>
+
+<p>
+  <b>Apellidos:</b>
+  <%= @alumno.apellidos %>
+</p>
+
+
+<%= link_to 'Edit', edit_alumno_path(@alumno) %> |
+<%= link_to 'Back', alumnos_path %>

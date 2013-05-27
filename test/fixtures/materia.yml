@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  numero_asignatura: MyString
+  descripcion: MyString
+  horas_por_clase: 1
+  numero_veces_semana: 1
+
+two:
+  numero_asignatura: MyString
+  descripcion: MyString
+  horas_por_clase: 1
+  numero_veces_semana: 1

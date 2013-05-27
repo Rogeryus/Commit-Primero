@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Numero asignatura:</b>
+  <%= @materium.numero_asignatura %>
+</p>
+
+<p>
+  <b>Descripcion:</b>
+  <%= @materium.descripcion %>
+</p>
+
+<p>
+  <b>Horas por clase:</b>
+  <%= @materium.horas_por_clase %>
+</p>
+
+<p>
+  <b>Numero veces semana:</b>
+  <%= @materium.numero_veces_semana %>
+</p>
+
+
+<%= link_to 'Edit', edit_materium_path(@materium) %> |
+<%= link_to 'Back', materia_path %>

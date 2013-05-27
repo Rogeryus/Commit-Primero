@@ -1,0 +1,29 @@
+<h1>Listing materia</h1>
+
+<table>
+  <tr>
+    <th>Numero asignatura</th>
+    <th>Descripcion</th>
+    <th>Horas por clase</th>
+    <th>Numero veces semana</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @materia.each do |materium| %>
+  <tr>
+    <td><%= materium.numero_asignatura %></td>
+    <td><%= materium.descripcion %></td>
+    <td><%= materium.horas_por_clase %></td>
+    <td><%= materium.numero_veces_semana %></td>
+    <td><%= link_to 'Show', materium %></td>
+    <td><%= link_to 'Edit', edit_materium_path(materium) %></td>
+    <td><%= link_to 'Destroy', materium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Materium', new_materium_path %>
